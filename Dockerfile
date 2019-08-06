@@ -1,6 +1,6 @@
 FROM ubuntu:16.04
 
-MAINTAINER Madhuri Koushik "madhuri@koushik.com"
+MAINTAINER Sabdeep Reddy "sandeep.reddy@tigeranalytics.com"
 
 RUN apt-get update -y && \
     apt-get install -y python3-pip python3-dev
