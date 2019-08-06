@@ -6,7 +6,7 @@ app = Flask(__name__)
 def index():
   return """
   <h1>Python Flask in Docker!</h1>
-  <p>It is a Jenkins Test...BOOOOOMMMM</p>
+  <p>It is a Jenkins CD Test...BOOOOOMMMM</p>
   """
   
 if __name__ == "__main__":
