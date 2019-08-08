@@ -6,7 +6,9 @@ from flask import Flask, url_for, request
 import json
 
 model_path = '/pickle_model.pkl'
-prd_model = pickle.load(model_path)
+with open(model_path, 'rb') as file:
+        prd_model = pickle.load(file)
+
 prd_model.summary()
 
 app = Flask(__name__)
@@ -22,7 +24,7 @@ def predicttest():
 def predict_res():
 
     if request.method == 'POST':
-        text_data = pd.DataFrame(request.json)
+        #text_data = pd.DataFrame(request.json)
 		
         text_out = prd_model.predict(text_data)
 
