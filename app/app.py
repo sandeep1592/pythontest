@@ -31,7 +31,7 @@ def predict_res():
 
         #Convert df t dict and the to Json
         #text_out_dict = text_out.to_dict(orient='records')
-        text_out_json = json.dumps(text_out, ensure_ascii=False)
+        text_out_json = json.dumps(str(text_out), ensure_ascii=False)
 
         return text_out_json
 
