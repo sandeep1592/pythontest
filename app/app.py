@@ -9,8 +9,6 @@ model_path = '/pickle_model.pkl'
 with open(model_path, 'rb') as file:
         prd_model = pickle.load(file)
 
-prd_model.summary()
-
 app = Flask(__name__)
 @app.route("/")
 def predicttest():
