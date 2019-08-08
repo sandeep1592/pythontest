@@ -22,7 +22,7 @@ def index():
     return render_template('index.html')
 
 # main predict code
-@app.route("/test", methods=['POST'])
+@app.route("/test", methods=['POST','GET'])
 def predict_res():
 
     if request.method == 'POST':
