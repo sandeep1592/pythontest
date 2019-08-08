@@ -18,7 +18,7 @@ def predicttest():
   """
 
 # main predict code
-@app.route('/', methods=['POST'])
+@app.route("/", methods=['POST'])
 def predict_res():
 
     if request.method == 'POST':
@@ -34,4 +34,4 @@ def predict_res():
 
 
 if __name__ == "__main__":
-     app.run(host="0.0.0.0", debug=True)
+     app.run_server(host="0.0.0.0", debug=True)
