@@ -1,4 +1,4 @@
-#import pandas as pd
+import pandas as pd
 import numpy as np
 import pickle
 
@@ -24,7 +24,7 @@ def predicttest():
 def predict_res():
 
     if request.method == 'POST':
-        #text_data = pd.DataFrame(request.json)
+        text_data = pd.DataFrame(request.json)
 		
         text_out = prd_model.predict(text_data)
 
