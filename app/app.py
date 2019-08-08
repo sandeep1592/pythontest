@@ -10,7 +10,7 @@ prd_model = pickle.load(model_path)
 prd_model.summary()
 
 app = Flask(__name__)
-@app.route('/predictest')
+@app.route("/")
 def predicttest():
 	return """
   <h1>Jenkins Test-v2 in Docker!</h1>
