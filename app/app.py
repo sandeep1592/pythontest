@@ -19,7 +19,7 @@ def predicttest():
 
 @app.route('/index')
 def index():
-    return flask.render_template('index.html')
+    return Flask.render_template('index.html')
 
 # main predict code
 @app.route("/test", methods=['POST'])
