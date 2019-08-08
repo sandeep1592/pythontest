@@ -11,11 +11,15 @@ with open(model_path, 'rb') as file:
 
 app = Flask(__name__)
 @app.route("/")
-def predicttest():
+def predicttest():	
 	return """
   <h1>Jenkins Test-v3 in Docker!</h1>
   <p>It is a Jenkins CD Test...BOOOOOMMMM</p>
   """
+
+@app.route('/index')
+def index():
+    return flask.render_template('index.html')
 
 # main predict code
 @app.route("/test", methods=['POST'])
