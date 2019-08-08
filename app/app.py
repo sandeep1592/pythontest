@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import pickle
 
-from flask import Flask, url_for, request
+from flask import Flask, url_for, request, render_template
 import json
 
 model_path = '/pickle_model.pkl'
