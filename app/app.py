@@ -12,7 +12,10 @@ prd_model.summary()
 app = Flask(__name__)
 @app.route('/predictest')
 def predicttest():
-    return 'predict API working'
+	return """
+  <h1>Jenkins Test-v2 in Docker!</h1>
+  <p>It is a Jenkins CD Test...BOOOOOMMMM</p>
+  """
 
 # main predict code
 @app.route('/predict_res', methods=['POST'])
