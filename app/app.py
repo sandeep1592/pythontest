@@ -10,7 +10,7 @@ prd_model = pickle.load(model_path)
 prd_model.summary()
 
 app = Flask(__name__)
-@app.route("/")
+@app.route("/test")
 def predicttest():
 	return """
   <h1>Jenkins Test-v2 in Docker!</h1>
@@ -18,7 +18,7 @@ def predicttest():
   """
 
 # main predict code
-@app.route('/predict_res', methods=['POST'])
+@app.route('/', methods=['POST'])
 def predict_res():
 
     if request.method == 'POST':
