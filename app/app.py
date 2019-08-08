@@ -23,14 +23,15 @@ def predict_res():
 
     if request.method == 'POST':
         print(request.json)
+	#text_data = pd.DataFrame(request.json)
 	text_data = pd.DataFrame(request.json)
 	print(text_data)
 		
         text_out = prd_model.predict(text_data)
 
         #Convert df t dict and the to Json
-        text_out_dict = text_out.to_dict(orient='records')
-        text_out_json = json.dumps(text_out_dict, ensure_ascii=False)
+        #text_out_dict = text_out.to_dict(orient='records')
+        text_out_json = json.dumps(text_out, ensure_ascii=False)
 
         return text_out_json
 
