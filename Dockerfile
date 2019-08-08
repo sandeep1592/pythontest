@@ -6,6 +6,7 @@ RUN apt-get update -y && \
     apt-get install -y python3-pip python3-dev
 
 COPY ./requirements.txt /requirements.txt
+COPY ./pickle_model.pkl /pickle_model.pkl
 
 WORKDIR /
 
