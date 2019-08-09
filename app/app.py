@@ -13,7 +13,7 @@ app = Flask(__name__)
 @app.route("/")
 def predicttest():	
 	return """
-  <h1>Jenkins Test-v3 in Docker!</h1>
+  <h1>Jenkins Test-v4 in Docker!</h1>
   <p>It is a Jenkins CD Test...BOOOOOMMMM</p>
   """
 
